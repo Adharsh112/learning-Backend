@@ -1,11 +1,11 @@
 {
   "name": "backend_project",
   "version": "1.0.0",
-  "description": "a backend project for my learning",
+  "description": "A backend project for learning purposes",
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "dev": "nodemon src/index.js"
+    "dev": "nodemon -r dotenv/config  src/index.js"
   },
   "keywords": [
     "javascript"
@@ -15,5 +15,10 @@
   "devDependencies": {
     "nodemon": "^3.0.2",
     "prettier": "^3.1.1"
+  },
+  "dependencies": {
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "mongoose": "^8.0.3"
   }
 }
